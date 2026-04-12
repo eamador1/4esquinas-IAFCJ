@@ -23,9 +23,9 @@
 - [📝 License](#license)
 
 
-# 📖 [Personal Portfolio] <a name="about-project"></a>
+# 📖 [4esquinas-IAFCJ] <a name="about-project"></a>
 
-In portfolio-project, I present the projects that I have been working on lately. Through this, potential clients and/or employers will see my abilities, experience and knowledge. I provide information about the projects and resources I used to create them, as well as options to contact me in case my experience is required.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -33,21 +33,21 @@ VS Code editor
 
 ### Tech Stack <a name="tech-stack"></a>
 
-HTML and CSS
+HTML, CSS, JavaScript
 
 ### Key Features <a name="key-features"></a>
 
 - **[HTML file]**
 - **[CSS file]**
-- **[Linters installed: Lighthouse, Webhint, Stylelint and node_modules]**
-- **[DOM_MANIPULATION]**
+- **[JS file]**
+- **[Linters installed: Lighthouse, Webhint, Stylelint]**
 - **[PAGE_DEPLOYED]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://eamador1-portfolio.netlify.app/)
+- [Live Demo Link](https://eamador1-***.netlify.app/)
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
