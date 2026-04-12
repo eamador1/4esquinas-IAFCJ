@@ -64,7 +64,7 @@ body {
 }
 
 .principios-container {
-  padding-top: 20vh;
+  padding: 20vh 0 20vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,8 +74,6 @@ body {
   display: flex;
   justify-content:space-between;
   width: 60vw;
-  
-
 }
 
 .principio {
@@ -94,4 +92,61 @@ body {
   transition: 1.5s ease;
 }
 
+.servicios-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding-bottom: 10vh;
+}
 
+.servicios-title {
+  color: black;
+  font-size: 50px;
+  padding-bottom: 5vh;
+}
+
+
+.servicios-section p {
+  color: black;
+  font-size: 1.5em;
+  padding-bottom: 8vh;
+}
+
+.servicios-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20vw;
+  width: 20%;
+  background-color: white;
+  border: #082567 2px;
+  border-radius: 15px;
+}
+
+.servicios h4 {
+  color: black;
+  margin: 3vh 0 3vh;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.servicios img {
+  background-color: #87CEFA;
+  width: 70%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 3vh;
+}
+
+.servicios p {
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+}
