@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+html, body {
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    background: gainsboro;
+    background-repeat: no-repeat;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+}
+
+.nav-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #082567;
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav-options {
+  transition: 0.3s;
+}
+
+.nav-list {
+  list-style: none; 
+}
+
+.link {
+  margin-left: 10vw;
+  font-weight: 400;
+  padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
+}
+
+.link:hover {
+  border-color: white;
+  font-weight: 600;
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+}
+
+.principios-title {
+  color: black;
+  font-size: 50px;
+  padding-bottom: 10vh;
+}
+
+.principios-container {
+  padding-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principios-container div {
+  display: flex;
+  justify-content:space-between;
+  width: 60vw;
+  
+
+}
+
+.principio {
+    width: 20%;
+    height:20%;
+    border-radius: 50%;
+    opacity: 0.80;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+.principio:hover {
+  width: 22%;
+  height: 22%;
+  opacity: 1;
+  transition: 1.5s ease;
+}
+
+
