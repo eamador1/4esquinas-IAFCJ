@@ -3,7 +3,6 @@
     padding: 0;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    color: white;
 }
 
 html, body {
@@ -12,7 +11,7 @@ html, body {
 }
 
 body {
-    background: gainsboro;
+    background: white;
     background-repeat: no-repeat;
 }
 
@@ -45,6 +44,7 @@ body {
   font-weight: 400;
   padding-bottom: 8px;
   border-bottom: 3px solid transparent;
+  color:white;
 }
 
 .link:hover {
@@ -149,4 +149,15 @@ body {
   color: black;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+/* Contact Section  */
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  
+  width:100vw;
+  height: 50vh;
+  margin-top: 10vh;
 }
