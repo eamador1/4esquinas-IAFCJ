@@ -19,16 +19,29 @@
     </nav>
   </header>
   <section class="form-section">
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="96ead554-1c9c-457c-add5-d3d6f582c235">
-      <label for="name">Nombre</label>
-      <input type="text" name="name" id="name" maxlength="30" placeholder= "Nombre y Apellido" required>
-      <label  for="email">Correo Electrónico</label>
-      <input type="email" name="email" id="email" placeholder= "Correo Electrónico" required>
-      <label for="msg">Mensaje</label>
-      <textarea name="message" id= "msg" maxlength="500" placeholder= "Solicito Oración ..."></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+    <h3>CONTÁCTENOS</h3>
+    <div class="info-container">
+      <img src="img/call.svg" class="phone-image"><p class="phone-number">7797-3564</p>
+      <img src="img/mail.svg" class="mail-image"><p class="email">pastor@cuatroesquinas.com</p>
+     
+      <img src="img/adrdess.svg" class="address-image"><div class="address">
+        <p>Km. 13 Carretera a Masaya.</p>  Detrás de Residencial Lindora
+        <p>Calle del chilamate.</p>
+      </div>
+      <ul class="social-networks"> 
+        <li class="list-social"> <a href="https://www.facebook.com/somos4troesquinas" class="logo"><img src="img/fb1.svg" class="fb"></a></li>
+      </ul>
+      <form action="https://api.web3forms.com/submit" method="POST" class="form">
+        <input type="hidden" name="access_key" value="96ead554-1c9c-457c-add5-d3d6f582c235">
+        <label for="name" class="label-name">Nombre</label>
+        <input type="text" class="text-name" name="name" id="name" maxlength="30" placeholder= "Nombre y Apellido" required>
+        <label  for="email" class="label-email">Correo Electrónico</label>
+        <input type="email" name="email" class="text-name" id="email" placeholder= "yo@ejemplo.com" required>
+        <label for="msg" class="label-message">Mensaje</label>
+        <textarea name="message" class="text-message" id= "msg" maxlength="600" placeholder= "Solicito Oración ..."></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </section>  
 </body>
 </html>
