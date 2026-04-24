@@ -18,7 +18,7 @@ body {
 /*Hero Section*/
 
 .hero {
-    height: 30vh;
+    height: 35vh;
     width: 100vw;
   }
 
@@ -77,14 +77,17 @@ color: white;
   margin-left: 10vw;
   transform: translateY(12px) rotate(45deg);
 }
+
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.active .bar:nth-child(3) {
   margin-top: 1.5vh;
   margin-left: 10vw;
   transform: translateY(-16px) rotate(-45deg);
 }
+
 .nav-mobil.active {
   display: flex;
   flex-direction: column;
@@ -97,22 +100,20 @@ color: white;
   padding-bottom: 10vh;
   visibility: visible; 
 }
+
 .nav-mobil.active .mobil-list {
   gap: 2vh;
   margin-top: -40vh;
   margin-left: 14vw;
   visibility: visible;
 }
+
 .mobil-list.active {
   visibility: visible;
   /*display: flex;
   flex-direction: row;*/
   position: absolute;
 }
-
-/*.mobil-link:second-child {
-  margin-bottom: 3vh ;
-}*/
 
 /* Principios Section Mobile*/
 
@@ -154,6 +155,100 @@ color: white;
   transition: 1.5s ease;
 }
 
+/* Servicios Section */
+
+.servicios-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  padding-bottom: 10vh;
+}
+
+.servicios-title {
+  color: black;
+  font-size: 2em;
+  padding-bottom: 5vh;
+}
+
+.servicios-section p {
+  color: black;
+  font-size: 1.5em;
+  padding-bottom: 8vh;
+  width: 100%;
+}
+
+.servicios-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  margin-left: 10vw;
+}
+
+.servicios {
+  display: flex;
+  border: black solid 3px;
+  height: 50vh;
+  width: 80vw;
+  background-image: url(img/florazul.jpeg);
+  background-color: rgba(0, 0, 0, 0.85);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-end;
+  border-radius: 15px;
+  margin-bottom: 5vh;
+}
+
+.servicios:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width: 80vw;
+  background-image: none;
+  background-color: #104e8b;
+  border: #082567 solid 2px;
+  border-radius: 15px;
+}
+
+.servicios:hover > .servicios {
+  background-image: none;
+}
+
+.servicios:hover > h4 {
+  display: block;
+}
+
+.servicios:hover > p {
+  display: block;
+}
+
+
+.servicios h4 {
+  color: white;
+  margin: 3vh 0 3vh;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: none;
+}
+
+.servicios img {
+  background-color: white;
+  width: 35%;
+  height: 25%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 0 3vh 2vh;
+}
+
+.servicios p {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: none;
+}
 /* Form Section*/
 
 .form-section {
@@ -346,38 +441,27 @@ button {
   }
 
   .principios-title {
-    color: black;
-    font-size: 50px;
+    font-size: 3.2em;
     padding-bottom: 10vh;
   }
 
   .principios-container {
     padding: 20vh 0 20vh 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .principios-container div {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 60vw;
   }
 
   .principio {
     width: 20%;
     height: 20%;
-    border-radius: 50%;
-    opacity: 0.8;
-    transition: 1s ease;
-    cursor: pointer;
   }
 
   .principio:hover {
     width: 22%;
     height: 22%;
-    opacity: 1;
-    transition: 1.5s ease;
   }
 
   .servicios-section {
@@ -390,7 +474,7 @@ button {
 
   .servicios-title {
     color: black;
-    font-size: 50px;
+    font-size: 3.2em;
     padding-bottom: 5vh;
   }
 
@@ -408,7 +492,6 @@ button {
 
   .servicios {
     display: flex;
-    flex-direction: column;
     align-items: center;
     height: 20vw;
     width: 20%;
