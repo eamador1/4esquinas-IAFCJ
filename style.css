@@ -161,7 +161,7 @@ color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90vw;
+  width: 100vw;
   padding-bottom: 10vh;
 }
 
@@ -169,13 +169,15 @@ color: white;
   color: black;
   font-size: 2em;
   padding-bottom: 5vh;
+  display: flex;
+  justify-content: center;
 }
 
 .servicios-section p {
   color: black;
   font-size: 1.5em;
   padding-bottom: 8vh;
-  width: 100%;
+  width: 90%;
 }
 
 .servicios-container {
@@ -183,7 +185,6 @@ color: white;
   flex-direction: column;
   align-items: center;
   width: 90vw;
-  margin-left: 10vw;
 }
 
 .servicios {
@@ -199,6 +200,7 @@ color: white;
   align-items: flex-end;
   border-radius: 15px;
   margin-bottom: 5vh;
+  cursor: pointer;
 }
 
 .servicios:hover {
@@ -223,12 +225,14 @@ color: white;
 
 .servicios:hover > p {
   display: block;
+  display: flex;
+  justify-content: center;
 }
 
 
 .servicios h4 {
   color: white;
-  margin: 3vh 0 3vh;
+  margin: 10vh 0 3vh 0;
   font-size: 1.2em;
   font-weight: bold;
   display: none;
@@ -240,7 +244,7 @@ color: white;
   height: 25%;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 0 3vh 2vh;
+  margin: 3vh 0 3vh 2vw;
 }
 
 .servicios p {
@@ -249,6 +253,8 @@ color: white;
   font-weight: bold;
   display: none;
 }
+
+
 /* Form Section*/
 
 .form-section {
@@ -486,37 +492,48 @@ button {
 
   .servicios-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 90vw;
   }
 
   .servicios {
-    display: flex;
-    align-items: center;
-    height: 20vw;
+    height: 50vh;
     width: 20%;
-    background-color: white;
-    border: #082567 2px;
+    border: black solid 2px;
     border-radius: 15px;
+    background-image: url(img/florazul.jpeg);
+    background-color: rgba(0, 0, 0, 0.85);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-end;
+  }
+
+  .servicios:hover {
+    height: 50vh;
+    width: 20%;
+    display: flex;
+    justify-content: center;
   }
 
   .servicios h4 {
-    color: black;
+    color: white;
     margin: 3vh 0 3vh;
     font-size: 1.2em;
     font-weight: bold;
   }
 
   .servicios img {
-    background-color: #87cefa;
-    width: 70%;
+    background-color: white;
+    width: 40%;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 3vh;
+    margin: 0 0 2vh .8vw;
   }
 
   .servicios p {
-    color: black;
+    color: white;
     font-size: 1.2em;
     font-weight: bold;
   }
