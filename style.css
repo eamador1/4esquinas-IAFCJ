@@ -20,11 +20,12 @@ body {
 .hero {
     height: 35vh;
     width: 100vw;
-  }
+    object-fit: cover;
+}
 
 .header-container {
   display: flex;
-  width: 100%;
+  width: 100vw;
 }
 
 .nav-bar {
@@ -120,27 +121,21 @@ color: white;
 .principios-title {
   color: black;
   font-size: 2em;
-  padding-bottom: 5vh;
-  
+  padding-bottom: 5vh; 
 }
+
 
 .principios-container {
-  padding: 10vh 0 10vh 0;
+  padding: 10vh 0 30vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.principios-container div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60vw;
+  width: 100vw;
 }
 
 .principio {
   width: 40%;
-  height: 40%;
+  height: 20%;
   border-radius: 50%;
   opacity: 0.8;
   transition: 1s ease;
@@ -148,11 +143,32 @@ color: white;
   margin-bottom: 2vh;
 }
 
-.principio:hover {
-  width: 42%;
-  height: 42%;
+.principio_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.principio_container:hover {
+  display: flex;
+  flex-direction: column;
   opacity: 1;
-  transition: 1.5s ease;
+}
+
+.principio_btn {
+  margin-top: 0;
+  background-color: #ff8000;
+  color: white;
+  opacity: 0;
+  border-radius: 5px;
+  border: 3px solid #ff8000;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.principio_container:hover  > .principio_btn {
+  opacity: 1;
 }
 
 /* Servicios Section */
@@ -171,13 +187,15 @@ color: white;
   padding-bottom: 5vh;
   display: flex;
   justify-content: center;
+  width: 90vw;
+
 }
 
-.servicios-section p {
+.invitacion {
   color: black;
   font-size: 1.5em;
   padding-bottom: 8vh;
-  width: 90%;
+  width: 80vw;
 }
 
 .servicios-container {
@@ -219,7 +237,7 @@ color: white;
   background-image: none;
 }
 
-.servicios:hover > h4 {
+.servicios:hover > h3 {
   display: block;
 }
 
@@ -227,10 +245,11 @@ color: white;
   display: block;
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 
-.servicios h4 {
+.servicios h3 {
   color: white;
   margin: 10vh 0 3vh 0;
   font-size: 1.2em;
@@ -247,7 +266,7 @@ color: white;
   margin: 3vh 0 3vh 2vw;
 }
 
-.servicios p {
+.dia {
   color: white;
   font-size: 1.2em;
   font-weight: bold;
@@ -452,22 +471,53 @@ button {
   }
 
   .principios-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
     padding: 20vh 0 20vh 0;
   }
 
-  .principios-container div {
+  .principios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .principio_container {
+    /*height: 40vh;*/
+    display: flex;
+    flex-direction: column; 
+    width: 25vw;
+  }
+    
+  .principio_container:hover {
+  display: flex;
+  flex-direction: column;
+  
+}
+/*  .principios-container {
     flex-direction: row;
     justify-content: space-between;
-  }
+  }*/
 
   .principio {
-    width: 20%;
-    height: 20%;
+    width: 10vw;
+    height: 20vh;
   }
 
-  .principio:hover {
-    width: 22%;
-    height: 22%;
+  /*.principio:hover {
+    width: 20vw;
+    height: 20vw;
+  }*/
+
+  .principio_btn {
+    background-color: #ff8000;
+    color: white;
+    opacity: 0;
+  }
+
+  .principio_container:hover > .principio_btn {
+    opacity:1;
   }
 
   .servicios-section {
@@ -484,10 +534,12 @@ button {
     padding-bottom: 5vh;
   }
 
-  .servicios-section p {
+  .invitacion {
     color: black;
     font-size: 1.5em;
     padding-bottom: 8vh;
+    width: 60vw;
+    padding-left: 20vw;
   }
 
   .servicios-container {
@@ -499,7 +551,7 @@ button {
 
   .servicios {
     height: 50vh;
-    width: 20%;
+    width: 20vw;
     border: black solid 2px;
     border-radius: 15px;
     background-image: url(img/florazul.jpeg);
@@ -512,7 +564,7 @@ button {
 
   .servicios:hover {
     height: 50vh;
-    width: 20%;
+    width: 20vw;
     display: flex;
     justify-content: center;
   }
@@ -526,13 +578,13 @@ button {
 
   .servicios img {
     background-color: white;
-    width: 40%;
+    width: 30%;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 0 2vh .8vw;
   }
 
-  .servicios p {
+  .dia {
     color: white;
     font-size: 1.2em;
     font-weight: bold;
