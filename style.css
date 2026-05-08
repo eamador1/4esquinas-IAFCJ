@@ -147,7 +147,8 @@ color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  position: relative;
+  /*width: 100vw;*/
 }
 
 .principio_container:hover {
@@ -165,6 +166,7 @@ color: white;
   border: 3px solid #ff8000;
   font-size: 1em;
   font-weight: bold;
+  padding: 10px 20px;
 }
 
 .principio_container:hover  > .principio_btn {
@@ -271,6 +273,50 @@ color: white;
   font-size: 1.2em;
   font-weight: bold;
   display: none;
+}
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.90);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  display: grid;
+  grid-column: 1fr;
+  grid-row: auto;
+  background-color: white;
+  width: 80%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.modal-text {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.close-btn {
+  /*position: absolute;*/
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 
@@ -518,6 +564,14 @@ button {
 
   .principio_container:hover > .principio_btn {
     opacity:1;
+  }
+
+  /*Modal Desktop*/
+
+  .close-btn {
+    top: 10px;
+    right: 20px;
+
   }
 
   .servicios-section {
