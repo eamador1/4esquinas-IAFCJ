@@ -15,7 +15,8 @@ const images = [
     id: '2',
     image:'img/bautismo.png',
     feature:'img/feature-bautismo.jpeg',
-    mobile: `El bautismo es un mandato especial y un gran privilegio pues tiene que ver con su salvación`,
+    mobile: `El bautismo es un mandato especial y un gran privilegio pues tiene que ver con su salvación "...el que crea y 
+    sea bautizado será salvo" (Mr. 16:16)`,
     desktop: `La gran comisión es de predicar el evangelio y bautizar al que creyere, por lo tanto, el bautismo
     es un mandato especial y un gran privilegio pues tiene que ver con su salvación, "...el que crea y sea bautizado
     será salvo" (Mr. 16:16), "...bautícese cada uno de vosotros el el Nombre de Jesucristo para el perdón de sus pecados..."
