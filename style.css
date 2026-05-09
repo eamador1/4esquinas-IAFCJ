@@ -15,12 +15,12 @@ body {
   background: white;
   background-repeat: no-repeat;
 }
-/*Hero Section*/
 
+/* Hero Section */
 .hero {
-    height: 35vh;
-    width: 100vw;
-    object-fit: cover;
+  height: 35vh;
+  width: 100vw;
+  object-fit: cover;
 }
 
 .header-container {
@@ -29,9 +29,9 @@ body {
 }
 
 .nav-bar {
-    width: 0;
-    height: 0;
-  }
+  width: 0;
+  height: 0;
+}
 
 .nav-mobil {
   display: flex;
@@ -54,14 +54,14 @@ body {
 }
 
 .mobil-link {
-/*visibility: hidden;*/
-color: white;
+  color: white;
+  margin-top: -200px;
 }
 
 .hamburger {
   flex: 1;
   margin-left: -70vw;
-} 
+}
 
 .bar {
   display: block;
@@ -70,10 +70,10 @@ color: white;
   margin: 0.6vh auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color:white
+  background-color: white;
 }
 
-.hamburger.active .bar:nth-child(1) {
+.hamburger.active.bar:nth-child(1) {
   margin-top: 5vh;
   margin-left: 10vw;
   transform: translateY(12px) rotate(45deg);
@@ -99,7 +99,7 @@ color: white;
   width: 110vw;
   height: 100vh;
   padding-bottom: 10vh;
-  visibility: visible; 
+  visibility: visible;
 }
 
 .nav-mobil.active .mobil-list {
@@ -111,19 +111,16 @@ color: white;
 
 .mobil-list.active {
   visibility: visible;
-  /*display: flex;
-  flex-direction: row;*/
   position: absolute;
 }
 
-/* Principios Section Mobile*/
+/* Principios Section Mobile */
 
 .principios-title {
   color: black;
   font-size: 2em;
-  padding-bottom: 5vh; 
+  padding-bottom: 5vh;
 }
-
 
 .principios-container {
   padding: 10vh 0 30vh 0;
@@ -131,6 +128,10 @@ color: white;
   flex-direction: column;
   align-items: center;
   width: 100vw;
+}
+
+.principios {
+  width: 90%;
 }
 
 .principio {
@@ -148,7 +149,6 @@ color: white;
   flex-direction: column;
   align-items: center;
   position: relative;
-  /*width: 100vw;*/
 }
 
 .principio_container:hover {
@@ -161,16 +161,12 @@ color: white;
   margin-top: 0;
   background-color: #ff8000;
   color: white;
-  opacity: 0;
+  opacity: 1;
   border-radius: 5px;
   border: 3px solid #ff8000;
   font-size: 1em;
   font-weight: bold;
   padding: 10px 20px;
-}
-
-.principio_container:hover  > .principio_btn {
-  opacity: 1;
 }
 
 /* Servicios Section */
@@ -190,7 +186,6 @@ color: white;
   display: flex;
   justify-content: center;
   width: 90vw;
-
 }
 
 .invitacion {
@@ -239,17 +234,12 @@ color: white;
   background-image: none;
 }
 
-.servicios:hover > h3 {
-  display: block;
-}
-
 .servicios:hover > p {
   display: block;
   display: flex;
   justify-content: center;
   color: white;
 }
-
 
 .servicios h3 {
   color: white;
@@ -279,10 +269,9 @@ color: white;
 
 .modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  /*width: 90vw;
+  height: 90vw;*/
   background-color: rgba(0, 0, 0, 0.90);
   backdrop-filter: blur(15px);
   display: flex;
@@ -295,10 +284,12 @@ color: white;
   display: none;
 }
 
+.modal-img {
+  width:100%;
+}
+
 .modal-content {
-  display: grid;
-  grid-column: 1fr;
-  grid-row: auto;
+  position:relative;
   background-color: white;
   width: 80%;
   max-width: 700px;
@@ -312,15 +303,12 @@ color: white;
 }
 
 .close-btn {
-  /*position: absolute;*/
-  top: 10px;
-  right: 20px;
+  justify-self: end;
   font-size: 2rem;
   cursor: pointer;
 }
 
-
-/* Form Section*/
+/* Form Section */
 
 .form-section {
   display: flex;
@@ -328,13 +316,13 @@ color: white;
   justify-content: center;
 }
 
-.mobil-link {
-  margin-top: -200px;
-}
-
 .form-section h3 {
   margin-bottom: 2vh;
   align-self: center;
+}
+
+.servicios:hover > h3 {
+  display: block;
 }
 
 .form {
@@ -458,42 +446,12 @@ button {
 }
 
 @media (min-width: 767px) {
-  
   .nav-mobil {
     visibility: hidden;
   }
 
   .nav-options {
-  visibility: visible;
-  }
-  
-  .nav-list {
-    list-style: none;
-  }
-  
-  .link {
-    margin-left: 10vw;
-    font-weight: 400;
-    padding-bottom: 8px;
-    border-bottom: 3px solid transparent;
-    color: white;
-    z-index: 1000;
-  }
-  
-  .link:hover {
-    border-color: white;
-    font-weight: 600;
-  }
-  
-  .hamburger {
-    visibility: hidden;
-  }
-
-  .nav-bar {
     visibility: visible;
-  }
-
-  .nav-options {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -503,6 +461,31 @@ button {
     height: 10vh;
     position: fixed;
     z-index: 1000;
+  }
+
+  .nav-list {
+    list-style: none;
+  }
+
+  .link {
+    margin-left: 10vw;
+    font-weight: 400;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+    color: white;
+    z-index: 1000;
+  }
+
+  .link:hover {
+    border-color: white;
+    font-weight: 600;
+  }
+
+  .hamburger {
+    visibility: hidden;
+  }
+
+  .nav-bar {
     visibility: visible;
   }
 
@@ -517,10 +500,10 @@ button {
   }
 
   .principios-container {
-    width: 100vw;
+    width: 90vw;
     display: flex;
     flex-direction: column;
-    padding: 20vh 0 20vh 0;
+    padding: 20vh 0 20vh 5vw;
   }
 
   .principios {
@@ -530,31 +513,20 @@ button {
   }
 
   .principio_container {
-    /*height: 40vh;*/
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     width: 25vw;
   }
-    
+
   .principio_container:hover {
-  display: flex;
-  flex-direction: column;
-  
-}
-/*  .principios-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }*/
+    display: flex;
+    flex-direction: column;
+  }
 
   .principio {
     width: 10vw;
     height: 20vh;
   }
-
-  /*.principio:hover {
-    width: 20vw;
-    height: 20vw;
-  }*/
 
   .principio_btn {
     background-color: #ff8000;
@@ -563,15 +535,18 @@ button {
   }
 
   .principio_container:hover > .principio_btn {
-    opacity:1;
+  opacity: 1;
   }
 
-  /*Modal Desktop*/
+  .principio_container:hover > .principio_btn {
+    opacity: 1;
+  }
+
+  /* Modal Desktop */
 
   .close-btn {
     top: 10px;
     right: 20px;
-
   }
 
   .servicios-section {
@@ -644,7 +619,7 @@ button {
     font-weight: bold;
   }
 
-                    /* Contact Section  Desktop*/
+  /* Contact Section  Desktop */
 
   .form-section {
     margin-top: 20vh;
@@ -704,13 +679,12 @@ button {
     margin-left: 10vw;
   }
 
-  .form {                     
+  .form {
     grid-column: 2/3;
     grid-row: 1/7;
     width: 80%;
     margin-left: 10%;
     border-bottom: none;
-
   }
 
   .label-name {
