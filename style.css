@@ -17,7 +17,94 @@ body {
 }
 
 /* Hero Section */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 7.5vh;
+}
+
+/* The dots/bullets/indicators */
+
+.dot-container {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 .hero {
+  margin-top: 7.5vh;
   height: 35vh;
   width: 100vw;
   object-fit: cover;
@@ -200,25 +287,10 @@ body {
   flex-direction: column;
   align-items: center;
   width: 90vw;
+  margin-left: 2.5vw;
 }
 
 .servicios {
-  display: flex;
-  border: black solid 3px;
-  height: 50vh;
-  width: 80vw;
-  background-image: url(img/florazul.jpeg);
-  background-color: rgba(0, 0, 0, 0.85);
-  background-blend-mode: darken;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: flex-end;
-  border-radius: 15px;
-  margin-bottom: 5vh;
-  cursor: pointer;
-}
-
-.servicios:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -228,25 +300,15 @@ body {
   background-color: #104e8b;
   border: #082567 solid 2px;
   border-radius: 15px;
+  margin-top: 5vh;
 }
-
-.servicios:hover > .servicios {
-  background-image: none;
-}
-
-.servicios:hover > p {
-  display: block;
-  display: flex;
-  justify-content: center;
-  color: white;
-}
+  
 
 .servicios h3 {
   color: white;
   margin: 10vh 0 3vh 0;
   font-size: 1.2em;
   font-weight: bold;
-  display: none;
 }
 
 .servicios img {
@@ -262,7 +324,6 @@ body {
   color: white;
   font-size: 1.2em;
   font-weight: bold;
-  display: none;
 }
 
 /* Modal */
@@ -270,8 +331,8 @@ body {
 .modal {
   position: fixed;
   inset: 0;
-  /*width: 90vw;
-  height: 90vw;*/
+  width: 100vw;
+  height: 90vh;
   background-color: rgba(0, 0, 0, 0.90);
   backdrop-filter: blur(15px);
   display: flex;
@@ -488,11 +549,31 @@ button {
   .nav-bar {
     visibility: visible;
   }
+  .text {
+  width: 100vw;
+  }
+
+  .next {
+    right: -32vw;
+  }
+
+  .slideshow-container {
+    margin: 0;
+  }
 
   .hero {
     height: 80vh;
     width: 100vw;
   }
+
+  .numbertext {
+    top: 10vh;
+  }
+
+  .dot-container {
+  width: 100vw;
+}
+
 
   .principios-title {
     font-size: 3.2em;
@@ -543,10 +624,25 @@ button {
   }
 
   /* Modal Desktop */
+  
+  .modal {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .modal-content {
+    height: 80vh;
+  }
 
   .close-btn {
     top: 10px;
     right: 20px;
+  }
+
+  .modal-img {
+    height: 50vh;
+    object-fit: cover;
   }
 
   .servicios-section {
@@ -568,7 +664,7 @@ button {
     font-size: 1.5em;
     padding-bottom: 8vh;
     width: 60vw;
-    padding-left: 20vw;
+    padding-left: 5vw;
   }
 
   .servicios-container {
@@ -576,9 +672,11 @@ button {
     flex-direction: row;
     justify-content: space-between;
     width: 90vw;
+    margin-left: 0;
   }
 
   .servicios {
+    display: flex;
     height: 50vh;
     width: 20vw;
     border: black solid 2px;
@@ -589,20 +687,31 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     align-items: flex-end;
+    border-radius: 15px;
+    margin-bottom: 5vh;
+    cursor: pointer;
   }
 
   .servicios:hover {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background-color: #104e8b;
+    border: #082567 solid 2px;
+    border-radius: 15px;
     height: 50vh;
     width: 20vw;
     display: flex;
     justify-content: center;
-  }
+    align-items: center;
+  }  
 
-  .servicios h4 {
+  .servicios h3 {
     color: white;
     margin: 3vh 0 3vh;
     font-size: 1.2em;
     font-weight: bold;
+    display: none;
   }
 
   .servicios img {
@@ -611,12 +720,25 @@ button {
     border-radius: 50%;
     overflow: hidden;
     margin: 0 0 2vh .8vw;
+    position: relative;
   }
 
   .dia {
     color: white;
     font-size: 1.2em;
     font-weight: bold;
+    display: none;
+  }
+
+  .servicios:hover > .servicios {
+  background-image: none;
+  }
+
+  .servicios:hover > p {
+    display: block;
+    display: flex;
+    justify-content: center;
+    color: white;
   }
 
   /* Contact Section  Desktop */
