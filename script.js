@@ -1,8 +1,8 @@
 const images = [
   {
     id: '1',
-    image:'img/jesucristo.png',
-    feature:'img/feature-jesucristo.jpeg',
+    image:'img/principios/jesucristo.png',
+    feature:'img/principios/feature-jesucristo.jpeg',
     mobile: `Creemos que Jesucristo es el único y verdadero Dios, pues en Él se mezclaron en una forma perfecta e incomprensible 
     los atributos Divinos y la naturaleza humana`,
     desktop:`Jesucristo fue concebido milagrosamente en el vientre de María, por obra y gracia del Espíritu Santo. 
@@ -13,8 +13,8 @@ const images = [
     
   {
     id: '2',
-    image:'img/bautismo.png',
-    feature:'img/feature-bautismo.jpeg',
+    image:'img/principios/bautismo.png',
+    feature:'img/principios/feature-bautismo.jpeg',
     mobile: `El bautismo es un mandato especial y un gran privilegio pues tiene que ver con su salvación "...el que crea y 
     sea bautizado será salvo" (Mr. 16:16)`,
     desktop: `La gran comisión es de predicar el evangelio y bautizar al que creyere, por lo tanto, el bautismo
@@ -25,8 +25,8 @@ const images = [
 
   {
     id: '3',
-    image:'img/santidad.png',
-    feature:'img/feature-santidad.jpeg',
+    image:'img/principios/santidad.png',
+    feature:'img/principios/feature-santidad.jpeg',
     mobile: `Creemos que todos los miembros del cuerpo de Cristo  deben ser santos , es decir, apartados del pecado y consagrados 
     al servicio de Dios.`,
     desktop:`Creemos que todos los miembros del cuerpo de Cristo  deben ser santos , es decir, apartados del pecado y consagrados 
