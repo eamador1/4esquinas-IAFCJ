@@ -677,11 +677,12 @@ button {
 
   .servicios {
     display: flex;
+    justify-content: center;
     height: 50vh;
     width: 20vw;
     border: black solid 2px;
     border-radius: 15px;
-    background-image: url(img/florazul.jpeg);
+    background-image: url(img/servicios/florazul.jpeg);
     background-color: rgba(0, 0, 0, 0.85);
     background-blend-mode: darken;
     background-repeat: no-repeat;
