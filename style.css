@@ -628,8 +628,6 @@ button {
   transform: translateY(13px) rotate(45deg);
 }
 
-
-
 .hamburger.active .bar:nth-child(3) {
   margin-top: 2.3vh;
   margin-left: 10vw;
@@ -645,8 +643,6 @@ button {
   margin-left: 10vw;
   transform: translateY(13px) rotate(45deg);
 }
-
-
 
 .hamburger.active .bar:nth-child(3) {
   margin-top: 2.65vh;
@@ -680,14 +676,11 @@ button {
   transform: translateY(13px) rotate(45deg);
 }
 
-
-
 .hamburger.active .bar:nth-child(3) {
   margin-top: 1.6vh;
   margin-left: 10vw;
   transform: translateY(-16px) rotate(-45deg);
 }
-
 }
 
 @media screen and (min-width: 429px) {
@@ -705,8 +698,6 @@ button {
 }
 
 }
-
-
 
 @media (min-width: 767px) {
   .nav-mobil {
