@@ -772,7 +772,7 @@ button {
   .nav-options {
     visibility: visible;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #082567;
     transition: 0.3s;
@@ -936,7 +936,8 @@ button {
 
   .servicios {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    align-items: flex-start;
     height: 50vh;
     width: 20vw;
     border: black solid 2px;
@@ -946,7 +947,6 @@ button {
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: flex-end;
     border-radius: 15px;
     margin-bottom: 5vh;
     cursor: pointer;
@@ -966,7 +966,7 @@ button {
     align-items: center;
   }  
 
-  .servicios h2 {
+  .servicios h3 {
     color: white;
     margin: 3vh 0 3vh;
     font-size: 1.2em;
@@ -981,6 +981,7 @@ button {
     overflow: hidden;
     margin: 0 0 2vh .8vw;
     position: relative;
+    display: flex;
   }
 
   .dia {
@@ -1096,12 +1097,23 @@ button {
     grid-row: 6/7;
   }
 
-  button {
+  .button {
     grid-row: 7/8;
   }
+
+
 }
 
 @media (min-width: 1439px) {
+
+ .button:hover {
+    color: #d96100;
+  }
+
+  .principio_btn {
+    width: 9vw;
+  }
+
 .info-container {
     width: 60vw;
 }
