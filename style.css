@@ -224,7 +224,7 @@ body {
 }
 
 .principios-container {
-  padding: 10vh 0 30vh 0;
+  padding: 10vh 0 15vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,7 +259,7 @@ body {
 }
 
 .principio_btn {
-  margin-top: 0;
+  margin: 3vh 0 5vh 0;
   background-color: #ff8000;
   color: white;
   opacity: 1;
@@ -390,9 +390,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 2vh;
 }
 
-.form-section h3 {
+.form-section h2 {
   margin-bottom: 2vh;
   align-self: center;
 }
@@ -417,7 +418,7 @@ body {
   margin: 0 5vw 5vw 5vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   border: solid #082567 3px;
 }
 
@@ -431,6 +432,12 @@ body {
   grid-row: 1/2;
   width: 90%;
   padding: 1vh 0 1vh 0;
+}
+
+.text-name::placeholder,
+.text-email, 
+.text-message {
+  padding: 1rem;
 }
 
 .label-email {
@@ -463,6 +470,11 @@ button {
   padding: 1vh;
   align-self: center;
   margin-bottom: 2%;
+  background-color: #ff8000;
+  border: 3px solid #ff8000;
+  border-radius: 5px;
+  color:  white;
+  font-size: 1.2rem;
 }
 
 .phone-image {
@@ -502,13 +514,14 @@ button {
 .address {
   grid-column: 1/2;
   grid-row: 4/5;
-  border-bottom: solid #082567 3px;
+  border-bottom: solid #082567; 
   padding: 1vh 0 1vh 20vw;
 }
 
 .social-networks {
   grid-column: 1/2;
-  grid-row: 8/9;
+  grid-row: 5/6;
+  border-bottom: solid #082567 3px;
 }
 
 .list-social {
@@ -519,6 +532,7 @@ button {
 .fb {
   height: 2em;
   margin-left: 20vw;
+  margin-top: 1.5vh;
 }
 
 /* Nosotros page */
@@ -650,6 +664,19 @@ button {
   transform: translateY(-16px) rotate(-45deg);
 }
 
+.principio_btn {
+  width: 30vw;
+}
+
+.info-container {
+  height: 90vh;
+  padding-top: 15vh;
+}
+
+ .form-section h2 {
+  padding-top: 8vh;
+ }
+
 }
 
 @media screen and (min-width: 374px) {
@@ -666,6 +693,16 @@ button {
   transform: translateY(-16px) rotate(-45deg);
 }
 
+.principio_btn {
+  width: 30vw;
+}
+
+.form-section {
+  padding-top: 8vh;
+}
+
+
+
 }
 
 @media screen and (min-width: 389px) {
@@ -680,6 +717,9 @@ button {
   margin-top: 1.8vh;
   margin-left: -25vw;
   transform: translateY(-16px) rotate(-45deg);
+}
+.info-container {
+  height: 80vh;
 }
 
 }
@@ -697,6 +737,11 @@ button {
   margin-left: -25vw;
   transform: translateY(-16px) rotate(-45deg);
 }
+
+.info-container {
+  width: 90vw;
+  height: 80vh;
+}
 }
 
 @media screen and (min-width: 429px) {
@@ -711,6 +756,10 @@ button {
   margin-top: 1.5vh;
   margin-left: -25vw;
   transform: translateY(-16px) rotate(-45deg);
+}
+
+.info-container {
+  height: 75vh;
 }
 
 }
@@ -955,13 +1004,13 @@ button {
   /* Contact Section  Desktop */
 
   .form-section {
-    margin-top: 20vh;
+    margin-top: 5vh;
     display: flex;
     align-items: center;
   }
 
   .info-container {
-    width: 60vw;
+    width: 90vw;
     height: 50vh;
     margin: 0 5vw 5vw 5vw;
     display: grid;
@@ -1006,6 +1055,7 @@ button {
 
   .social-networks {
     grid-row: 6/7;
+    border: none;
   }
 
   .fb {
@@ -1050,3 +1100,11 @@ button {
     grid-row: 7/8;
   }
 }
+
+@media (min-width: 1439px) {
+.info-container {
+    width: 60vw;
+}
+
+}
+
