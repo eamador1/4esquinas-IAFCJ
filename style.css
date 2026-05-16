@@ -671,6 +671,19 @@ button {
   }
 }
 
+.footer {
+  height: 7.5vh;
+  background-color: #082567;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer span {
+  color: white;
+  font-size: 1rem;
+}
+
 @media screen and (min-width: 359px) {
   .hamburger.active .bar:nth-child(1) {
     margin-top: 5vh;
@@ -888,6 +901,31 @@ button {
   .principio_container:hover > .principio_btn {
     opacity: 1;
   }
+  
+  .preach {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10vh 0 15vh 0;
+  width: 90vw;
+}
+
+.preach-title {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 2em;
+  padding-bottom: 5vh;
+  margin-left: 5vw;
+  width: 90vw;
+}
+
+.fb-video {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  margin-left: 5vw;
+}
 
   /* Modal Desktop */
 
@@ -1104,6 +1142,9 @@ button {
 
   .button {
     grid-row: 7/8;
+  }
+  .footer {
+   height: 10vh;
   }
 }
 
