@@ -904,28 +904,27 @@ button {
   
   .preach {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   padding: 10vh 0 15vh 0;
   width: 90vw;
-}
-
-.preach-title {
-  display: flex;
-  justify-content: center;
-  color: black;
-  font-size: 2em;
-  padding-bottom: 5vh;
-  margin-left: 5vw;
-  width: 90vw;
-}
-
-.fb-video {
-  width: 90vw;
-  display: flex;
-  justify-content: center;
-  margin-left: 5vw;
-}
+  }
+  
+  .preach-title {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2em;
+    padding-bottom: 5vh;
+    margin-left: 5vw;
+    width: 90vw;
+  }
+  
+  .fb-video {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    margin-left: 5vw;
+  }
 
   /* Modal Desktop */
 
