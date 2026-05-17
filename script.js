@@ -38,7 +38,6 @@ const images = [
 const principios = document.querySelector('.principios');
 
 images.forEach((image) => {
-
   const principioContainer = document.createElement('div');
 
   const img = document.createElement('img');
@@ -61,12 +60,11 @@ images.forEach((image) => {
 
   img.src = image.image;
 
-  imgBtn.textContent = "Ver Más";
+  imgBtn.textContent = 'Ver Más';
 
   imgBtn.addEventListener('click', () => {
-
     modal.classList.remove('hidden');
-  
+
     modalImg.src = image.feature;
 
     if (window.innerWidth <= 768) {
@@ -74,7 +72,6 @@ images.forEach((image) => {
     } else {
       modalText.textContent = image.desktop;
     }
-
   });
 
   principios.appendChild(principioContainer);
@@ -83,43 +80,21 @@ images.forEach((image) => {
 
   principioContainer.appendChild(imgBtn);
 
-closeBtn.addEventListener('click', () => {
+  closeBtn.addEventListener('click', () => {
     modal.classList.add('hidden');
-
-});
+  });
 
   modal.addEventListener('click', (e) => {
-
     if (e.target === modal) {
       modal.classList.add('hidden');
     }
-
-});
-
+  });
 });
 
 let slideIndex = 1;
 
-showSlides(slideIndex);
-
-// AUTO SLIDE
-setInterval(() => {
-  plusSlides(1);
-}, 5000);
-
-// NEXT / PREV BUTTONS
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// DOTS
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
 // MAIN FUNCTION
 function showSlides(n) {
-
   const slides = document.getElementsByClassName('mySlides');
 
   const dots = document.getElementsByClassName('dot');
@@ -132,11 +107,11 @@ function showSlides(n) {
     slideIndex = slides.length;
   }
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  for (let i = 0; i < slides.length; i += 1) {
+    slides[i].style.display = 'none';
   }
 
-  for (let i = 0; i < dots.length; i++) {
+  for (let i = 0; i < dots.length; i += 1) {
     dots[i].classList.remove('active');
   }
 
@@ -145,3 +120,19 @@ function showSlides(n) {
   dots[slideIndex - 1].classList.add('active');
 }
 
+// NEXT / PREV BUTTONS
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// DOTS
+window.currentSlide = function currentSlide(n) {
+  showSlides(slideIndex = n);
+};
+
+showSlides(slideIndex);
+
+// AUTO SLIDE
+setInterval(() => {
+  plusSlides(1);
+}, 5000);
