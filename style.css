@@ -576,28 +576,24 @@ button {
 }
 
 .people1 {
-  position: absolute;
-  object-fit: cover;
   margin-left: 0;
-  margin-top: 10vh;
+  margin-top: 5vh;
   animation: slideLeft 5s ease-in-out forwards;
 }
 
 .container-people1-text {
-  position: absolute;
-  margin-top: 25vh;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 7rem;
-  margin-left: 0;
+  width: 100%;
   background-color: #082567;
   animation: fadeIn 5s ease forwards;
 }
 
 .people1-text {
   width: 90%;
-  padding-left: 5%;
   padding-top: 3%;
-  position: absolute;
   color: white;
   animation: fadeIn 5s ease forwards;
 }
@@ -605,14 +601,11 @@ button {
 /* People 2 */
 
 .people2-container {
-  position: absolute;
-  margin-top: 50vh;
   width: 100vw;
+  margin-bottom: 14vh;
 }
 
 .people2 {
-  position: absolute;
-  object-fit: cover;
   width: 50vw;
   height: 18vh;
   margin-right: 20vw;
@@ -620,12 +613,14 @@ button {
 }
 
 .container-people2-text {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 7rem;
   width: 100%;
   height: 7rem;
   background-color: #082567;
   animation: fadeIn 2s ease forwards;
-  margin-top: 20vh;
 }
 
 .people2-text {
@@ -644,7 +639,7 @@ button {
   }
 
   to {
-    transform: translateX(80%);
+    transform: translateX(100%);
     opacity: 1;
   }
 }
@@ -901,30 +896,37 @@ button {
   .principio_container:hover > .principio_btn {
     opacity: 1;
   }
-  
+
   .preach {
-  display: flex;
-  justify-content: center;
-  padding: 10vh 0 15vh 0;
-  width: 90vw;
-  }
-  
-  .preach-title {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 0 15vh 0;
+    width: 90vw;
+  }
+
+  .preach-title {
+    align-items: center;
+    width: 100%;
+    /*justify-content: center;
     color: black;
     font-size: 2em;
     padding-bottom: 5vh;
     margin-left: 5vw;
-    width: 90vw;
+    width: 90vw;*/
   }
-  
+
   .fb-video {
-    width: 90vw;
+    /*width: 90vw;*/
     display: flex;
     justify-content: center;
-    margin-left: 5vw;
+    width: 100%;
+    /*margin-left: 5vw;*/
   }
+
+  .fb_iframe_widget {
+  display: inline-block
+}
 
   /* Modal Desktop */
 
@@ -1142,8 +1144,9 @@ button {
   .button {
     grid-row: 7/8;
   }
+
   .footer {
-   height: 10vh;
+    height: 10vh;
   }
 }
 
