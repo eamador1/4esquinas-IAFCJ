@@ -578,6 +578,7 @@ button {
 .people1 {
   margin-left: 0;
   margin-top: 5vh;
+  object-fit: cover;
   animation: slideLeft 5s ease-in-out forwards;
 }
 
@@ -598,6 +599,10 @@ button {
   animation: fadeIn 5s ease forwards;
 }
 
+.people1-desktop {
+  display: none;
+}
+
 /* People 2 */
 
 .people2-container {
@@ -608,6 +613,7 @@ button {
 .people2 {
   width: 50vw;
   height: 18vh;
+  object-fit: cover;
   margin-right: 20vw;
   animation: slideRight 5s ease forwards;
 }
@@ -639,7 +645,7 @@ button {
   }
 
   to {
-    transform: translateX(100%);
+    transform: translateX(90%);
     opacity: 1;
   }
 }
@@ -908,25 +914,20 @@ button {
   .preach-title {
     align-items: center;
     width: 100%;
-    /*justify-content: center;
-    color: black;
-    font-size: 2em;
-    padding-bottom: 5vh;
-    margin-left: 5vw;
-    width: 90vw;*/
+    margin: 0;
   }
 
   .fb-video {
-    /*width: 90vw;*/
     display: flex;
     justify-content: center;
     width: 100%;
-    /*margin-left: 5vw;*/
+    margin: 0;
   }
 
   .fb_iframe_widget {
-  display: inline-block
-}
+    display: flex !important;
+    justify-content: center !important;
+  }
 
   /* Modal Desktop */
 
@@ -1147,6 +1148,89 @@ button {
 
   .footer {
     height: 10vh;
+  }
+
+  /* Nosotros Section */
+  .people1-container {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    transition: none;
+    animation: none;
+  }
+
+  .container-people1-text {
+    opacity: 1;
+    transition: none;
+    animation: none;
+    margin-top: 8vh;
+    height: 20vh;
+  }
+
+  .people1-text {
+    display: none;
+    opacity: 1;
+    transition: none;
+    animation: none;
+    font-size: 2rem;
+  }
+
+  .people1 {
+    opacity: 1;
+    transition: none;
+    animation: none;
+    width: 20vw;
+    height: 20vh;
+    margin-top: 8vh;
+  }
+
+  .people1-desktop {
+    display: block;
+    width: 90%;
+    padding-top: 0;
+    color: white;
+    animation: fadeIn 5s ease forwards;
+  }
+
+  .people2-container {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    transition: none;
+    animation: none;
+  }
+
+  .container-people2-text {
+    opacity: 1;
+    transition: none;
+    animation: none;
+    margin-top: 8vh;
+    height: 20vh;
+  }
+
+  .people2-text {
+    display: none;
+    opacity: 1;
+    transition: none;
+    animation: none;
+  }
+
+  .people2 {
+    opacity: 1;
+    transition: none;
+    animation: none;
+    width: 20vw;
+    height: 20vh;
+    margin-top: 8vh;
+    margin-right: 0;
+  }
+
+  .people2-desktop {
+    display: block;
+    width: 90%;
+    padding-top: 0;
+    color: white;
+    animation: fadeIn 5s ease forwards;
   }
 }
 
