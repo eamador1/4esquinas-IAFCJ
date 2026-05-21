@@ -138,15 +138,12 @@ setInterval(() => {
 }, 5000);
 
 window.addEventListener('load', () => {
-
   const fb = document.createElement('script');
 
   fb.async = true;
   fb.defer = true;
 
-  fb.src =
-  'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0';
+  fb.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0';
 
   document.body.appendChild(fb);
-
 });
