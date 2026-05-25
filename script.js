@@ -9,6 +9,7 @@ const images = [
     El mismo Dios del Antiguo Testamento tomó forma humana. Por lo cual creemos que Jesucristo es el único y verdadero 
     Dios, pues en Él se mezclaron en una forma perfecta e incomprensible los atributos Divinos y la naturaleza humana por 
     eso se le llana Hijo de Dios e Hijo del Hombre (Is.7:14; 52:6; 60:1-3; Lc.1.35; Jn.1:14; Ro 9:5; 1Ti 3:16)`,
+    alt: 'Imagen Jesucristo',
   },
 
   {
@@ -21,6 +22,7 @@ const images = [
     es un mandato especial y un gran privilegio pues tiene que ver con su salvación, "...el que crea y sea bautizado
     será salvo" (Mr. 16:16), "...bautícese cada uno de vosotros el el Nombre de Jesucristo para el perdón de sus pecados..."
     (Hch. 2:38), "El bautismo que corresponde a esto ahora nos salva" (1Pe 3:21)`,
+    alt: 'Imagen Bautismo',
   },
 
   {
@@ -32,6 +34,7 @@ const images = [
     desktop: `Creemos que todos los miembros del cuerpo de Cristo  deben ser santos , es decir, apartados del pecado y consagrados 
     al servicio de Dios. Por esta razón deben de abstenerse de toda clase de prácticas, diversiones e inmundicias de la carne y 
     del espíritu (Lv. 19: 2; 2Co. 7: 1; Ef. 5: 26-27; 1Ti.4: 3-4; 2Ti.2: 21; He.12: 14; 1Ped 1: 15: 17)`,
+    alt: 'Imagen Santidad',
   },
 ];
 
@@ -59,6 +62,8 @@ images.forEach((image) => {
   imgBtn.classList.add('principio_btn');
 
   img.src = image.image;
+
+  img.alt = image.alt;
 
   imgBtn.textContent = 'Ver Más';
 
