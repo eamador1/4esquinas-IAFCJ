@@ -72,6 +72,8 @@ images.forEach((image) => {
 
     modalImg.src = image.feature;
 
+    modalImg.alt = image.alt;
+
     if (window.innerWidth <= 768) {
       modalText.textContent = image.mobile;
     } else {
